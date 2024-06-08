@@ -1,0 +1,262 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#themeToggle img {
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.google-login {
+    background-color: #db4a39;
+    color: white;
+    margin-top: 10px;
+}
+
+.google-login:hover {
+    background-color: #c23321;
+}
+
+.hidden {
+    display: none;
+}
+
+#pasteLinkContainer {
+    margin-top: 20px;
+}
+
+#pasteLink {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#copyLinkButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#copyLinkButton:hover {
+    background-color: #218838;
+}
+
+#previewContainer {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#previewContainer h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Privacy options and expiration options */
+.privacy-options, .expiration-options {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.privacy-options label, .expiration-options label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Dark theme styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #242424;
+    color: #e0e0e0;
+}
+
+body.dark-mode input[type="text"], body.dark-mode input[type="email"], body.dark-mode input[type="password"], body.dark-mode textarea, body.dark-mode #pasteLink {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode button {
+    background-color: #0056b3;
+}
+
+body.dark-mode button:hover {
+    background-color: #007BFF;
+}
+
+body.dark-mode footer {
+    background-color: #242424;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .login-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

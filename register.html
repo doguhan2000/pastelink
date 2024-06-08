@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Kayıt Ol</h1>
+        <form id="registerForm">
+            <input type="email" id="email" placeholder="E-posta" required>
+            <input type="password" id="newPassword" placeholder="Şifre" required>
+            <input type="password" id="confirmPassword" placeholder="Şifreyi Onayla" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+        <button class="google-login" id="googleRegister">Google ile Kayıt Ol</button>
+        <p>Hesabınız var mı? <a href="login.html">Giriş Yap</a></p>
+        <div id="messageContainer" class="hidden"></div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

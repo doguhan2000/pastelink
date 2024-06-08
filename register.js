@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.status === 200) {
                 return response.json().then(data => {
                     showPopupMessage('Kayıt başarılı!');
+                    console.log(response.status);
                     showMessage('', true);  // Ekranda herhangi bir bilgi gösterme
                 });
             } else if (response.status === 400) {
